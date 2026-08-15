@@ -777,3 +777,42 @@ section{ padding: 56px 0; }
   color: var(--ink-soft);
 }
 .pricing-card ul li{ margin-bottom: 7px; }
+
+/* ==========================================================================
+   Share bar (Facebook / X / Instagram copy-link)
+   ========================================================================== */
+
+.share-bar{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.share-bar .share-label{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.share-bar .share-btn{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+  padding: 0;
+}
+.share-bar .share-btn svg{ width: 18px; height: 18px; }
+.share-bar .share-btn:hover{ transform: translateY(-2px); background: var(--sun); }
+.share-bar .share-copied-msg{
+  font-size: 0.85rem;
+  color: var(--mint-d);
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.share-bar .share-copied-msg.show{ opacity: 1; }

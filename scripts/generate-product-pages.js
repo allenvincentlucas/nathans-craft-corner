@@ -42,6 +42,7 @@ const ICONS = iconsSandbox.ICONS;
 
 const GUMROAD_PROFILE = "https://maestroallen.gumroad.com/";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61575226142723";
+const SITE_BASE_URL = "https://allenvincentlucas.github.io/nathans-craft-corner/";
 
 function urlPrefixFor(categoryMeta) {
   return categoryMeta.href.replace(/^products\//, "").replace(/\.html$/, "");
@@ -72,6 +73,12 @@ function productPageHtml(product, categoryMeta) {
     .map(function (p) { return "<p>" + escapeHtml(p) + "</p>"; })
     .join("\n        ");
 
+  const fileName = prefix + "-" + product.slug + ".html";
+  const pageUrl = SITE_BASE_URL + "products/" + fileName;
+  const ogImage = product.image
+    ? SITE_BASE_URL + "images/" + product.image.replace(/^\.\.\/images\//, "")
+    : SITE_BASE_URL + "images/og-default.jpg";
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +86,18 @@ function productPageHtml(product, categoryMeta) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escapeHtml(product.name)} — Nathan's Craft Corner</title>
 <meta name="description" content="${escapeHtml(product.desc)}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nathan's Craft Corner">
+<meta property="og:url" content="${pageUrl}">
+<meta property="og:title" content="${escapeHtml(product.name)}">
+<meta property="og:description" content="${escapeHtml(product.desc)}">
+<meta property="og:image" content="${ogImage}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escapeHtml(product.name)}">
+<meta name="twitter:description" content="${escapeHtml(product.desc)}">
+<meta name="twitter:image" content="${ogImage}">
+
 <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
@@ -113,6 +132,7 @@ function productPageHtml(product, categoryMeta) {
         <div class="product-actions" style="margin-top:10px;">
           ${actionHtml}
         </div>
+        <div id="share-bar" class="share-bar"></div>
         <p style="margin-top:18px;"><a href="${prefix}.html">&larr; Back to ${escapeHtml(categoryMeta.label)}</a></p>
       </div>
     </div>
@@ -125,6 +145,7 @@ function productPageHtml(product, categoryMeta) {
 <script src="../js/categories.js"></script>
 <script src="../js/products-data.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/share.js"></script>
 </body>
 </html>
 `;
