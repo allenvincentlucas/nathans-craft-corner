@@ -46,7 +46,17 @@ var PRODUCTS = {
   //   desc: "A5 flip calendar personalized with your family's favorite photos.",
   //   gumroadUrl: "", image: "", slug: "family-photo-desk-calendar" }
 
-  calendars: [],
+  calendars: [
+    { name: "Living Word — A 2027 Scripture Calendar (Printed Set)",
+      price: "95 QAR", type: "physical",
+      desc: "A 12-card watercolor desk calendar with a miniature wooden easel — one hand-painted Scripture verse per month for 2027.",
+      gumroadUrl: "", image: "", slug: "living-word-2027-print" },
+
+    { name: "Living Word — A 2027 Scripture Calendar (Digital Download)",
+      price: "$8.99", type: "digital",
+      desc: "A 12-card watercolor Scripture calendar for 2027 — instant print-at-home PDF, one verse per month.",
+      gumroadUrl: "https://maestroallen.gumroad.com/l/living-word-2027", image: "", slug: "living-word-2027-digital" }
+  ],
 
   decals: [],
 
