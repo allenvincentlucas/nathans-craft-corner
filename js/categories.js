@@ -49,5 +49,13 @@ var CATEGORIES = [
     cardClass: "card-sun",
     iconKey: "shadowBox",
     tagline: "Layered keepsake frames that tell your story in depth."
+  },
+  {
+    key: "storybooks",
+    label: "Bible Storybooks",
+    href: "products/storybooks.html",
+    cardClass: "card-blush",
+    iconKey: "book",
+    tagline: "Gentle illustrated Bible stories for little hearts, book by book."
   }
 ];

@@ -77,5 +77,12 @@ var ICONS = {
   sparkle:
     '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M32 8l4 16 16 4-16 4-4 16-4-16-16-4 16-4z"/>' +
+    "</svg>",
+
+  book:
+    '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M32 16c-5-4-13-6-20-6v34c7 0 15 2 20 6"/>' +
+    '<path d="M32 16c5-4 13-6 20-6v34c-7 0-15 2-20 6"/>' +
+    '<line x1="32" y1="16" x2="32" y2="50"/>' +
     "</svg>"
 };
