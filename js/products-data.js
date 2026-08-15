@@ -32,6 +32,10 @@
               was hand-built (e.g. a rich sales page) instead of the plain
               auto-generated template. The generator script will skip it
               and leave it untouched on future runs.
+     - hidden: set to true to keep a product in this file (so it's easy to
+              bring back later) without showing it anywhere on the site —
+              category pages, the home grid, and page generation all skip
+              hidden products. Leave it off (or false) to show normally.
 
    Categories are the array names: calendars, decals, souvenirs, cards, shadowBoxes
    ========================================================================== */
@@ -56,7 +60,7 @@ var PRODUCTS = {
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Printed Copy)",
       price: "65 QAR", type: "physical",
       desc: "Book 4 of our illustrated Bible storybook series, based on Matthew 14 — a gentle, watercolor-style keepsake for little hearts.",
-      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true },
+      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true, hidden: true },
 
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Digital Download)",
       price: "$6", type: "digital",

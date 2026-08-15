@@ -66,7 +66,7 @@
 
     var categoryKey = grid.getAttribute("data-category");
     var iconKey = grid.getAttribute("data-icon") || "photo";
-    var items = (window.PRODUCTS && window.PRODUCTS[categoryKey]) || [];
+    var items = ((window.PRODUCTS && window.PRODUCTS[categoryKey]) || []).filter(function (p) { return !p.hidden; });
 
     if (!items.length) {
       grid.outerHTML =

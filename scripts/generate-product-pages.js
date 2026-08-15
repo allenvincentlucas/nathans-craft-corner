@@ -157,6 +157,11 @@ let skipped = 0;
 CATEGORIES.forEach(function (categoryMeta) {
   const items = PRODUCTS[categoryMeta.key] || [];
   items.forEach(function (product) {
+    if (product.hidden) {
+      console.log("Skipped products/" + urlPrefixFor(categoryMeta) + "-" + product.slug + ".html (hidden product)");
+      skipped++;
+      return;
+    }
     if (!product.slug) {
       skipped++;
       return;

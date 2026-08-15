@@ -24,7 +24,9 @@
   function withRoot(href) { return ROOT + href; }
 
   function categoryCount(key) {
-    return (PRODUCTS_DATA[key] && PRODUCTS_DATA[key].length) || 0;
+    var items = PRODUCTS_DATA[key];
+    if (!items) return 0;
+    return items.filter(function (p) { return !p.hidden; }).length;
   }
 
   // Only categories that currently have at least one product
