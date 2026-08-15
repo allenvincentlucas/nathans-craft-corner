@@ -26,6 +26,12 @@
               individual product page at
               products/<category>-<slug>.html, and the card will link to it.
               Leave slug as "" if you don't want a dedicated page yet.
+              Two products can share the same slug to link to one shared
+              page (e.g. a physical + digital version of the same item).
+     - customPage: set to true if the page at products/<category>-<slug>.html
+              was hand-built (e.g. a rich sales page) instead of the plain
+              auto-generated template. The generator script will skip it
+              and leave it untouched on future runs.
 
    Categories are the array names: calendars, decals, souvenirs, cards, shadowBoxes
    ========================================================================== */
@@ -50,13 +56,11 @@ var PRODUCTS = {
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Printed Copy)",
       price: "65 QAR", type: "physical",
       desc: "Book 4 of our illustrated Bible storybook series, based on Matthew 14 — a gentle, watercolor-style keepsake for little hearts.",
-      longDesc: "In this gentle story, children discover two of Jesus's most beloved miracles: sharing a small gift until it becomes more than enough for everyone, and reaching out a hand to catch a friend who is afraid.\n\nBased on Matthew 14:13-21 and 22-33, \"More Than Enough\" follows Jesus feeding a great crowd with just five loaves and two fish, and walking on the water to reach his frightened friends in the storm. A warm reminder for little hearts that Jesus always provides and always saves.\n\nBook 4 in the series. Printed copies are made to order — message us on Facebook to arrange yours.",
-      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough-print" },
+      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true },
 
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Digital Download)",
       price: "$6", type: "digital",
       desc: "Book 4 of our illustrated Bible storybook series, based on Matthew 14 — instant digital download, print at home or read on any device.",
-      longDesc: "In this gentle story, children discover two of Jesus's most beloved miracles: sharing a small gift until it becomes more than enough for everyone, and reaching out a hand to catch a friend who is afraid.\n\nBased on Matthew 14:13-21 and 22-33, \"More Than Enough\" follows Jesus feeding a great crowd with just five loaves and two fish, and walking on the water to reach his frightened friends in the storm. A warm reminder for little hearts that Jesus always provides and always saves.\n\nBook 4 in the series. Instant digital download — read on any device or print at home.",
-      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough" }
+      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true }
   ]
 };

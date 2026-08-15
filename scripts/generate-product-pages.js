@@ -140,6 +140,11 @@ CATEGORIES.forEach(function (categoryMeta) {
       skipped++;
       return;
     }
+    if (product.customPage) {
+      console.log("Skipped products/" + urlPrefixFor(categoryMeta) + "-" + product.slug + ".html (hand-built customPage, left untouched)");
+      skipped++;
+      return;
+    }
     const prefix = urlPrefixFor(categoryMeta);
     const fileName = prefix + "-" + product.slug + ".html";
     const filePath = path.join(ROOT, "products", fileName);
