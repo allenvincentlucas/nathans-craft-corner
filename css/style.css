@@ -442,6 +442,7 @@ section{ padding: 56px 0; }
 }
 .badge-physical{ background: var(--dusty-blue); color: var(--ink); }
 .badge-digital{ background: var(--sun); color: var(--ink); }
+.badge-both{ background: linear-gradient(90deg, var(--dusty-blue) 50%, var(--sun) 50%); color: var(--ink); }
 
 .product-actions{ margin-top: 2px; }
 .product-actions .btn-sm{ padding: 7px 14px; font-size: 0.82rem; }

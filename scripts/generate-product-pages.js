@@ -60,13 +60,22 @@ function productPageHtml(product, categoryMeta) {
     ? '<img src="../images/' + (product.image.replace(/^\.\.\/images\//, "")) + '" alt="' + escapeHtml(product.name) + '" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">'
     : (ICONS[categoryMeta.iconKey] || "");
 
-  const badgeHtml = product.type === "digital"
+  const badgeHtml = product.type === "both"
+    ? '<span class="badge badge-both">Physical &amp; Digital</span>'
+    : product.type === "digital"
     ? '<span class="badge badge-digital">Digital download</span>'
     : '<span class="badge badge-physical">Made to order</span>';
 
-  const actionHtml = product.type === "digital"
+  const actionHtml = product.type === "both"
+    ? '<a class="btn btn-primary" href="' + (product.gumroadUrl || GUMROAD_PROFILE) + '" target="_blank" rel="noopener">Buy on Gumroad</a> ' +
+      '<a class="btn btn-secondary" href="' + FACEBOOK_URL + '" target="_blank" rel="noopener">Message to Order (Qatar only)</a>'
+    : product.type === "digital"
     ? '<a class="btn btn-primary" href="' + (product.gumroadUrl || GUMROAD_PROFILE) + '" target="_blank" rel="noopener">Buy on Gumroad</a>'
     : '<a class="btn btn-primary" href="' + FACEBOOK_URL + '" target="_blank" rel="noopener">Message on Facebook to order</a>';
+
+  const priceDisplay = product.type === "both"
+    ? escapeHtml(product.digitalPrice || "") + " digital &middot; " + escapeHtml(product.physicalPrice || "") + " physical"
+    : escapeHtml(product.price || "");
 
   const descParagraphs = (product.longDesc || product.desc)
     .split(/\n\n+/)
@@ -127,7 +136,7 @@ function productPageHtml(product, categoryMeta) {
       <div class="product-detail-info">
         ${badgeHtml}
         <h1>${escapeHtml(product.name)}</h1>
-        <p class="price" style="font-size:1.4rem;">${escapeHtml(product.price)}</p>
+        <p class="price" style="font-size:1.4rem;">${priceDisplay}</p>
         ${descParagraphs}
         <div class="product-actions" style="margin-top:10px;">
           ${actionHtml}

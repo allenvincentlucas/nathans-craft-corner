@@ -11,10 +11,18 @@
    Copy the example object (commented out below) into the right
    category array and fill in:
      - name:  Product name shown on the card
-     - price: e.g. "₱350" or "$12" — shown as text, type whatever you like
-     - type:  "physical" or "digital"
+     - type:  "physical", "digital", or "both"
               physical -> shows a "Message on Facebook to order" button
               digital  -> shows a "Buy on Gumroad" button using gumroadUrl
+              both     -> for a product sold as BOTH a physical item and a
+                          digital download as ONE listing (one card, one
+                          page) instead of two separate products. Use
+                          physicalPrice + digitalPrice instead of price,
+                          and gumroadUrl for the digital purchase link.
+     - price: e.g. "₱350" or "$12" — shown as text, type whatever you like.
+              Only used when type is "physical" or "digital".
+     - physicalPrice / digitalPrice: used instead of price when type is
+              "both", e.g. physicalPrice: "95 QAR", digitalPrice: "$8.99"
      - desc:  One short sentence about the product (shown on the card)
      - gumroadUrl: only needed for digital products, leave "" for physical
                    (defaults to the shop's Gumroad profile if left blank)
@@ -47,14 +55,9 @@ var PRODUCTS = {
   //   gumroadUrl: "", image: "", slug: "family-photo-desk-calendar" }
 
   calendars: [
-    { name: "Living Word — A 2027 Scripture Calendar (Printed Set)",
-      price: "95 QAR", type: "physical",
-      desc: "A 12-card watercolor desk calendar with a miniature wooden easel — one hand-painted Scripture verse per month for 2027.",
-      gumroadUrl: "", image: "../images/products/living-word-2027-cover.jpg", slug: "living-word-2027", customPage: true },
-
-    { name: "Living Word — A 2027 Scripture Calendar (Digital Download)",
-      price: "$8.99", type: "digital",
-      desc: "A 12-card watercolor Scripture calendar for 2027 — instant print-at-home PDF, one verse per month.",
+    { name: "Living Word — A 2027 Scripture Calendar",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$8.99",
+      desc: "A 12-card watercolor desk calendar with a miniature wooden easel — one hand-painted Scripture verse per month for 2027. Available as a printed set or a digital download.",
       gumroadUrl: "https://maestroallen.gumroad.com/l/living-word-2027", image: "../images/products/living-word-2027-cover.jpg", slug: "living-word-2027", customPage: true }
   ],
 

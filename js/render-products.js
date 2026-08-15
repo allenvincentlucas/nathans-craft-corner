@@ -28,9 +28,21 @@
       ? '<img src="' + p.image + '" alt="' + escapeHtml(p.name) + '" style="width:100%;height:100%;object-fit:cover;">'
       : ICONS[iconKey] || ICONS.photo;
 
-    var badge = p.type === "digital"
-      ? '<span class="badge badge-digital">Digital download</span>'
-      : '<span class="badge badge-physical">Made to order</span>';
+    var badge;
+    if (p.type === "both") {
+      badge = '<span class="badge badge-both">Physical &amp; Digital</span>';
+    } else if (p.type === "digital") {
+      badge = '<span class="badge badge-digital">Digital download</span>';
+    } else {
+      badge = '<span class="badge badge-physical">Made to order</span>';
+    }
+
+    var priceHTML;
+    if (p.type === "both") {
+      priceHTML = escapeHtml(p.digitalPrice || "") + " digital &middot; " + escapeHtml(p.physicalPrice || "") + " physical";
+    } else {
+      priceHTML = escapeHtml(p.price || "");
+    }
 
     var fallbackAction = p.type === "digital"
       ? '<a class="btn btn-sm btn-blue" href="' + (p.gumroadUrl || GUMROAD_PROFILE) + '" target="_blank" rel="noopener">Buy on Gumroad</a>'
@@ -51,7 +63,7 @@
       '<div class="product-info">' +
       badge +
       titleHTML +
-      '<p class="price">' + escapeHtml(p.price) + "</p>" +
+      '<p class="price">' + priceHTML + "</p>" +
       '<div class="product-actions">' + actionHTML + "</div>" +
       "</div>" +
       "</div>"
