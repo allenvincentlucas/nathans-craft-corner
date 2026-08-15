@@ -65,6 +65,6 @@ var PRODUCTS = {
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Digital Download)",
       price: "$6", type: "digital",
       desc: "Book 4 of our illustrated Bible storybook series, based on Matthew 14 — instant digital download, print at home or read on any device.",
-      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "" }
+      gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true }
   ]
 };

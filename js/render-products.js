@@ -28,33 +28,31 @@
       ? '<img src="' + p.image + '" alt="' + escapeHtml(p.name) + '" style="width:100%;height:100%;object-fit:cover;">'
       : ICONS[iconKey] || ICONS.photo;
 
-    var comingSoonTag = p.image ? "" : '<span class="coming-soon-tag">Photo coming soon</span>';
-
     var badge = p.type === "digital"
       ? '<span class="badge badge-digital">Digital download</span>'
       : '<span class="badge badge-physical">Made to order</span>';
 
-    var action = p.type === "digital"
+    var fallbackAction = p.type === "digital"
       ? '<a class="btn btn-sm btn-blue" href="' + (p.gumroadUrl || GUMROAD_PROFILE) + '" target="_blank" rel="noopener">Buy on Gumroad</a>'
       : '<a class="btn btn-sm btn-primary" href="' + FACEBOOK_URL + '" target="_blank" rel="noopener">Message to order</a>';
 
-    var detailsLink = "";
     var titleHTML = "<h3>" + escapeHtml(p.name) + "</h3>";
+    var actionHTML = fallbackAction;
+
     if (p.slug) {
       var detailHref = categoryUrlPrefix(categoryKey) + "-" + p.slug + ".html";
       titleHTML = '<h3><a href="' + detailHref + '" style="color:inherit;">' + escapeHtml(p.name) + "</a></h3>";
-      detailsLink = '<a class="btn btn-sm btn-secondary" href="' + detailHref + '">View details</a> ';
+      actionHTML = '<a class="btn btn-sm btn-secondary" href="' + detailHref + '">View details</a>';
     }
 
     return (
       '<div class="product-card reveal">' +
-      '<div class="product-photo">' + photoInner + comingSoonTag + "</div>" +
+      '<div class="product-photo">' + photoInner + "</div>" +
       '<div class="product-info">' +
       badge +
       titleHTML +
-      '<p class="desc">' + escapeHtml(p.desc) + "</p>" +
       '<p class="price">' + escapeHtml(p.price) + "</p>" +
-      '<div class="product-actions">' + detailsLink + action + "</div>" +
+      '<div class="product-actions">' + actionHTML + "</div>" +
       "</div>" +
       "</div>"
     );
