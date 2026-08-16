@@ -63,7 +63,12 @@ var PRODUCTS = {
     { name: "Boho Neutral — A 2027 Calendar",
       type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
       desc: "A Year of Gentle Growth — a 12-month A6 desk calendar in a soft boho-neutral palette, with a gentle affirmation for every month. Available as a printed set with wooden easel or a digital download.",
-      gumroadUrl: "https://maestroallen.gumroad.com/l/boho-neutral-2027-calendar", image: "../images/products/boho-2027-thumb.jpg", slug: "boho-neutral-2027", customPage: true }
+      gumroadUrl: "https://maestroallen.gumroad.com/l/boho-neutral-2027-calendar", image: "../images/products/boho-2027-thumb.jpg", slug: "boho-neutral-2027", customPage: true },
+
+    { name: "Gathered Blooms — A 2027 Calendar",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
+      desc: "A Year in Bloom — a 12-month A6 desk calendar of gathered dried botanicals in terracotta pots and hand-tied bouquets. Available as a printed set with wooden easel or a digital download.",
+      gumroadUrl: "https://maestroallen.gumroad.com/l/gathered-blooms-2027-calendar", image: "../images/products/gathered-blooms-2027-cover.jpg", slug: "gathered-blooms-2027", customPage: true }
   ],
 
   decals: [],
