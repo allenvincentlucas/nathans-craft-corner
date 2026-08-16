@@ -56,7 +56,7 @@ var PRODUCTS = {
 
   calendars: [
     { name: "Living Word — A 2027 Scripture Calendar",
-      type: "both", physicalPrice: "95 QAR", digitalPrice: "$8.99",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
       desc: "A 12-card watercolor desk calendar with a miniature wooden easel — one hand-painted Scripture verse per month for 2027. Available as a printed set or a digital download.",
       gumroadUrl: "https://maestroallen.gumroad.com/l/living-word-2027", image: "../images/products/living-word-2027-cover.jpg", slug: "living-word-2027", customPage: true }
   ],
