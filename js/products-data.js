@@ -56,17 +56,17 @@ var PRODUCTS = {
 
   calendars: [
     { name: "Living Word — A 2027 Scripture Calendar",
-      type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$12",
       desc: "A 12-card watercolor desk calendar with a miniature wooden easel — one hand-painted Scripture verse per month for 2027. Available as a printed set or a digital download.",
       gumroadUrl: "https://maestroallen.gumroad.com/l/living-word-2027", image: "../images/products/living-word-2027-cover.jpg", slug: "living-word-2027", customPage: true },
 
     { name: "Boho Neutral — A 2027 Calendar",
-      type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$12",
       desc: "A Year of Gentle Growth — a 12-month A6 desk calendar in a soft boho-neutral palette, with a gentle affirmation for every month. Available as a printed set with wooden easel or a digital download.",
       gumroadUrl: "https://maestroallen.gumroad.com/l/boho-neutral-2027-calendar", image: "../images/products/boho-2027-thumb.jpg", slug: "boho-neutral-2027", customPage: true },
 
     { name: "Gathered Blooms — A 2027 Calendar",
-      type: "both", physicalPrice: "95 QAR", digitalPrice: "$26",
+      type: "both", physicalPrice: "95 QAR", digitalPrice: "$12",
       desc: "A Year in Bloom — a 12-month A6 desk calendar of gathered dried botanicals in terracotta pots and hand-tied bouquets. Available as a printed set with wooden easel or a digital download.",
       gumroadUrl: "https://maestroallen.gumroad.com/l/gathered-blooms-2027-calendar", image: "../images/products/gathered-blooms-2027-cover.jpg", slug: "gathered-blooms-2027", customPage: true }
   ],
