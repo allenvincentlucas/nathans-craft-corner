@@ -710,9 +710,10 @@ section{ padding: 56px 0; }
 
 .book-gallery{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin: 8px 0 12px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  max-width: 640px;
+  margin: 8px auto 6px;
 }
 .book-gallery img{
   width: 100%;
@@ -726,8 +727,14 @@ section{ padding: 56px 0; }
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .book-gallery img:hover{ transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
-@media (max-width: 800px){ .book-gallery{ grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px){ .book-gallery{ grid-template-columns: 1fr; } }
+.gallery-hint{
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 16px;
+}
+@media (max-width: 480px){ .book-gallery{ grid-template-columns: repeat(2, 1fr); max-width: 360px; } }
 
 /* ==========================================================================
    Gallery lightbox (click a sample page to see it full-size)
