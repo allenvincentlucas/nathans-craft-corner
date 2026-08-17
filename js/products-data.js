@@ -89,5 +89,12 @@ var PRODUCTS = {
       price: "$6", type: "digital",
       desc: "Book 4 of our illustrated Bible storybook series, based on Matthew 14 — instant digital download, print at home or read on any device.",
       gumroadUrl: "", image: "../images/products/storybook-more-than-enough.jpg", slug: "book-4-more-than-enough", customPage: true }
+  ],
+
+  planners: [
+    { name: "2027 Agenda Planner",
+      price: "150 QAR", type: "physical",
+      desc: "A full-year spiral-bound agenda planner — yearly and monthly calendars, goal and habit trackers, weekly spreads for all of 2027, and year-end reflection pages.",
+      gumroadUrl: "", image: "../images/products/agenda-planner-2027-cover.jpg", slug: "2027-agenda-planner", customPage: true, hidden: true }
   ]
 };

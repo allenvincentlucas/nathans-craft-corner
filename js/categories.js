@@ -57,5 +57,13 @@ var CATEGORIES = [
     cardClass: "card-blush",
     iconKey: "book",
     tagline: "Gentle illustrated Bible stories for little hearts, book by book."
+  },
+  {
+    key: "planners",
+    label: "Planners",
+    href: "products/planners.html",
+    cardClass: "card-mint",
+    iconKey: "notebook",
+    tagline: "Full-year agendas to plan, track, and reflect on every season."
   }
 ];

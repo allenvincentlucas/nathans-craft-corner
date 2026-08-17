@@ -84,5 +84,18 @@ var ICONS = {
     '<path d="M32 16c-5-4-13-6-20-6v34c7 0 15 2 20 6"/>' +
     '<path d="M32 16c5-4 13-6 20-6v34c-7 0-15 2-20 6"/>' +
     '<line x1="32" y1="16" x2="32" y2="50"/>' +
+    "</svg>",
+
+  notebook:
+    '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+    '<rect x="14" y="8" width="38" height="48" rx="3"/>' +
+    '<line x1="14" y1="18" x2="8" y2="18"/>' +
+    '<line x1="14" y1="26" x2="8" y2="26"/>' +
+    '<line x1="14" y1="34" x2="8" y2="34"/>' +
+    '<line x1="14" y1="42" x2="8" y2="42"/>' +
+    '<line x1="22" y1="8" x2="22" y2="56"/>' +
+    '<line x1="28" y1="20" x2="44" y2="20"/>' +
+    '<line x1="28" y1="28" x2="44" y2="28"/>' +
+    '<line x1="28" y1="36" x2="38" y2="36"/>' +
     "</svg>"
 };
