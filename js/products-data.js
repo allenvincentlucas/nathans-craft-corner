@@ -95,6 +95,11 @@ var PRODUCTS = {
     { name: "2027 Agenda Planner",
       price: "150 QAR", type: "physical",
       desc: "A full-year spiral-bound agenda planner — yearly and monthly calendars, goal and habit trackers, weekly spreads for all of 2027, and year-end reflection pages.",
-      gumroadUrl: "", image: "../images/products/agenda-planner-2027-cover.jpg", slug: "2027-agenda-planner", customPage: true }
+      gumroadUrl: "", image: "../images/products/agenda-planner-2027-cover.jpg", slug: "2027-agenda-planner", customPage: true },
+
+    { name: "2027 Planner — 365 Days",
+      price: "150 QAR", type: "physical",
+      desc: "An all-in-one A4 daily planner for 2027 — a dedicated page for every single day, plus monthly calendars, weekly planners, contacts, password tracker, and important dates.",
+      gumroadUrl: "", image: "../images/products/planner-365-days-2027-cover.jpg", slug: "2027-365-day-planner", customPage: true }
   ]
 };
