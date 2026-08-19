@@ -4,7 +4,11 @@
    tape dividers, dotted cutting-mat backdrop. Palette lifted from the logo.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap');
+/* Fonts (Baloo 2, Quicksand, Caveat) are loaded via <link rel="preconnect">
+   + <link rel="stylesheet"> in each page's <head> instead of @import here —
+   @import blocks the browser from discovering the font request until this
+   whole CSS file has downloaded and parsed, adding an avoidable round-trip
+   to the critical rendering path. */
 
 :root{
   /* --- Palette (from logo) --- */

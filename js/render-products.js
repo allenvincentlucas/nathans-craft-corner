@@ -25,7 +25,7 @@
 
   function productCard(p, iconKey, categoryKey) {
     var photoInner = p.image
-      ? '<img src="' + p.image + '" alt="' + escapeHtml(p.name) + '" style="width:100%;height:100%;object-fit:cover;">'
+      ? '<img src="' + p.image + '" alt="' + escapeHtml(p.name) + '" loading="lazy" style="width:100%;height:100%;object-fit:cover;">'
       : ICONS[iconKey] || ICONS.photo;
 
     var badge;
