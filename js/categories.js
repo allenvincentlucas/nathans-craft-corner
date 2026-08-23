@@ -36,11 +36,11 @@ var CATEGORIES = [
   },
   {
     key: "cards",
-    label: "Layered Greeting Cards",
+    label: "Cards & Decks",
     href: "products/cards.html",
     cardClass: "card-lavender",
     iconKey: "card",
-    tagline: "3D paper cards that pop for every occasion."
+    tagline: "3D layered greeting cards and scripture card decks."
   },
   {
     key: "shadowBoxes",

@@ -75,7 +75,12 @@ var PRODUCTS = {
 
   souvenirs: [],
 
-  cards: [],
+  cards: [
+    { name: "Held & Heard — A Scripture Deck for Every Feeling",
+      type: "both", physicalPrice: "75 QAR", digitalPrice: "$7.99",
+      desc: "A 55-card scripture mood deck — 5 moods, 11 cards each — pairing a verse, a reflection, and an action phrase, with space to write your own.",
+      gumroadUrl: "https://maestroallen.gumroad.com/l/held-and-heard", image: "../images/products/held-heard/cover.jpg", slug: "held-and-heard-faith-remedy-deck", customPage: true }
+  ],
 
   shadowBoxes: [],
 
