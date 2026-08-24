@@ -97,5 +97,14 @@ var ICONS = {
     '<line x1="28" y1="20" x2="44" y2="20"/>' +
     '<line x1="28" y1="28" x2="44" y2="28"/>' +
     '<line x1="28" y1="36" x2="38" y2="36"/>' +
+    "</svg>",
+
+  notepad:
+    '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+    '<rect x="12" y="10" width="34" height="44" rx="3"/>' +
+    '<line x1="19" y1="22" x2="39" y2="22"/>' +
+    '<line x1="19" y1="30" x2="39" y2="30"/>' +
+    '<line x1="19" y1="38" x2="33" y2="38"/>' +
+    '<path d="M38 40l12-12 4 4-12 12-5 1z"/>' +
     "</svg>"
 };

@@ -106,5 +106,27 @@ var PRODUCTS = {
       price: "150 QAR", type: "physical",
       desc: "An all-in-one A4 daily planner for 2027 — a dedicated page for every single day, plus monthly calendars, weekly planners, contacts, password tracker, and important dates.",
       gumroadUrl: "", image: "../images/products/planner-365-days-2027-cover.jpg", slug: "2027-365-day-planner", customPage: true }
+  ],
+
+  notepads: [
+    { name: "Lectio Divina: My Teen Prayer Sesh",
+      type: "both", physicalPrice: "55 QAR", digitalPrice: "$8.99",
+      desc: "A colorful, teen-friendly Lectio Divina notepad — five simple steps to read, reflect, pray, listen, and live it out, one page at a time.",
+      gumroadUrl: "", image: "../images/products/notepads/lectio-divina-teen-prayer-sesh.jpg", slug: "lectio-divina-teen-prayer-sesh", customPage: true, hidden: true },
+
+    { name: "The Examen: Basecamp Reflection",
+      type: "both", physicalPrice: "55 QAR", digitalPrice: "$8.99",
+      desc: "A hiking-themed nightly Examen notepad — Trail Highlights, Elevation, Retrace Your Steps, Tripping Hazards, and Tomorrow's Compass.",
+      gumroadUrl: "", image: "../images/products/notepads/examen-basecamp-reflection.jpg", slug: "examen-basecamp-reflection", customPage: true, hidden: true },
+
+    { name: "Soul Session: Teen Lectio Divina",
+      type: "both", physicalPrice: "55 QAR", digitalPrice: "$8.99",
+      desc: "A clean, minimal take on the five-step Lectio Divina — Lectio, Meditatio, Oratio, Contemplatio, and Actio — for a quiet daily prayer session.",
+      gumroadUrl: "", image: "../images/products/notepads/soul-session-teen-lectio-divina.jpg", slug: "soul-session-teen-lectio-divina", customPage: true, hidden: true },
+
+    { name: "Soul Session: My Daily Lectio Divina (Teen Edition)",
+      type: "both", physicalPrice: "55 QAR", digitalPrice: "$8.99",
+      desc: "A colorful, icon-guided single-page Lectio Divina — five numbered steps from reading the Word to living it out, with a daily vibe check.",
+      gumroadUrl: "", image: "../images/products/notepads/soul-session-daily-lectio-divina.jpg", slug: "soul-session-daily-lectio-divina", customPage: true, hidden: true }
   ]
 };

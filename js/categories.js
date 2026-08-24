@@ -65,5 +65,13 @@ var CATEGORIES = [
     cardClass: "card-mint",
     iconKey: "notebook",
     tagline: "Full-year agendas to plan, track, and reflect on every season."
+  },
+  {
+    key: "notepads",
+    label: "Notepads",
+    href: "products/notepads.html",
+    cardClass: "card-lavender",
+    iconKey: "notepad",
+    tagline: "Guided reflection notepads for quiet, everyday moments with God."
   }
 ];
