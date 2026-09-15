@@ -66,13 +66,13 @@ var PRODUCTS = {
       gumroadUrl: "", image: "", slug: "blessed-in-gods-kingdom", customPage: true },
 
     { name: "Jesus Is With Me at Mass",
-      type: "both", physicalPrice: "Price on request", digitalPrice: "$9.49",
+      type: "both", physicalPrice: "49 QAR + delivery", digitalPrice: "$9.49",
       desc: "A gentle 16-page Catholic picture ebook for ages 2–4 that helps little children notice, listen, pray, and remember that Jesus is near during Mass.",
-      longDesc: "Help little hearts feel at home during Mass. Jesus Is With Me at Mass uses simple words, warm illustrations, and familiar church moments to help children ages 2–4 enter Mass with curiosity, participate with love, and remember that Jesus is near.",
+      longDesc: "Help little hearts feel at home during Mass. Jesus Is With Me at Mass uses simple words, warm illustrations, and familiar church moments to help children ages 2–4 enter Mass with curiosity, participate with love, and remember that Jesus is near. The Qatar physical edition is available for QAR 49 + delivery.",
       status: "Launches 20 September 2026",
-      details: ["16-page A4 Catholic picture ebook", "Created for ages 2–4", "Gentle, age-appropriate Mass preparation and reflection", "Useful for home, parish, preschool, and catechism", "Digital edition available worldwide", "Limited Qatar print copies may be available"],
+      details: ["16-page A4 Catholic picture ebook", "Created for ages 2–4", "Gentle, age-appropriate Mass preparation and reflection", "Useful for home, parish, preschool, and catechism", "Digital edition available worldwide", "Qatar physical edition: QAR 49 + delivery"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message for digital order",
-      physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Ask about Qatar print copies",
+      physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to order Qatar print — QAR 49",
       gumroadUrl: "", image: "", slug: "jesus-is-with-me-at-mass", customPage: true },
 
     { name: "Nine Nights Until Christmas",
