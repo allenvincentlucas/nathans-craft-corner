@@ -14,7 +14,7 @@ var PRODUCTS = {
       details: ["13 illustrated A5 pages: cover + January–December", "Accurate Sunday-start calendar grids", "Digital printable available worldwide", "Qatar physical edition includes wooden easel", "Physical production lead time: 2–3 working days"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message for digital order",
       physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to reserve Qatar edition",
-      gumroadUrl: "", image: "", slug: "a-year-in-qatar-2027", customPage: true },
+      gumroadUrl: "", image: "../images/products/a-year-in-qatar-2027.webp", slug: "a-year-in-qatar-2027", customPage: true },
 
     { name: "2027 Worship Team Calendar",
       type: "both", physicalPrice: "69 QAR", digitalPrice: "$9.44",
@@ -24,7 +24,7 @@ var PRODUCTS = {
       details: ["13 premium A5 calendar cards", "Sunday-start monthly grids", "Worship-team editorial visual theme", "Worldwide digital printable", "Qatar physical edition with wooden easel", "Physical production lead time: 2–3 working days"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message for digital order",
       physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to reserve Qatar edition",
-      gumroadUrl: "", image: "", slug: "2027-worship-team-calendar", customPage: true },
+      gumroadUrl: "", image: "../images/products/worship-team-calendar-2027.png", slug: "worship-team-2027", customPage: true },
 
     { name: "Living Word — A 2027 Scripture Calendar",
       type: "both", physicalPrice: "95 QAR", digitalPrice: "$12",
@@ -63,7 +63,7 @@ var PRODUCTS = {
       details: ["16-page A4 illustrated Catholic Gospel reflection", "For ages 6–8", "Based on Luke 6:20–26", "Includes reflection, prayer, creative activity, and Live It kindness challenge", "Digital edition available worldwide", "Qatar printed edition available; delivery separate"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message to order digital edition",
       physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to order Qatar print",
-      gumroadUrl: "", image: "", slug: "blessed-in-gods-kingdom", customPage: true },
+      gumroadUrl: "", image: "../images/products/blessed-in-gods-kingdom.webp", slug: "blessed-in-gods-kingdom", customPage: true },
 
     { name: "Jesus Is With Me at Mass",
       type: "both", physicalPrice: "49 QAR + delivery", digitalPrice: "$9.49",
@@ -73,7 +73,7 @@ var PRODUCTS = {
       details: ["16-page A4 Catholic picture ebook", "Created for ages 2–4", "Gentle, age-appropriate Mass preparation and reflection", "Useful for home, parish, preschool, and catechism", "Digital edition available worldwide", "Qatar physical edition: QAR 49 + delivery"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message for digital order",
       physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to order Qatar print — QAR 49",
-      gumroadUrl: "", image: "", slug: "jesus-is-with-me-at-mass", customPage: true },
+      gumroadUrl: "", image: "../images/products/jesus-with-me-at-mass.webp", slug: "jesus-is-with-me-at-mass", customPage: true },
 
     { name: "Nine Nights Until Christmas",
       type: "both", physicalPrice: "49 QAR + delivery", digitalPrice: "Launch $5.99 · regular $7.49",
@@ -83,7 +83,7 @@ var PRODUCTS = {
       details: ["32-page A4 illustrated Catholic family story", "Introduces the Simbang Gabi tradition to children", "Faithful focus on Mass, family prayer, sacrifice, hope, and preparation for Christ", "Digital edition available worldwide", "Launch digital price: $5.99; regular price: $7.49", "Qatar printed edition: 49 QAR; delivery separate"],
       digitalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", digitalOrderLabel: "Message for digital order",
       physicalOrderUrl: "https://www.facebook.com/NathansCraftCorner/", physicalOrderLabel: "Message to order Qatar print",
-      gumroadUrl: "", image: "", slug: "nine-nights-until-christmas", customPage: true },
+      gumroadUrl: "", image: "../images/products/nine-nights-until-christmas.png", slug: "nine-nights-until-christmas", customPage: true },
 
     { name: "More Than Enough: Jesus Feeds the Crowd and Walks on the Water — Book 4 (Printed Copy)",
       price: "65 QAR", type: "physical",
