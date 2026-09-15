@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://allenvincentlucas.github.io/nathans-craft-corner/sitemap.xml
+Sitemap: https://nathans-craft-corner.maestroallen.chatgpt.site/sitemap.xml

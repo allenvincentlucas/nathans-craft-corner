@@ -1,22 +1,17 @@
-/* ==========================================================================
+/* ========================================================================== 
    Nathan's Craft Corner — category metadata (single source of truth)
    Used by js/main.js to build the nav/footer/home grid, and by
    scripts/generate-product-pages.js to build individual product pages.
-
-   A category only appears in the navigation, footer, and home page once it
-   has at least one product in js/products-data.js. Add products there and
-   the category will show up automatically — no need to edit this file to
-   "turn on" a category.
    ========================================================================== */
 
 var CATEGORIES = [
   {
     key: "calendars",
-    label: "Custom Calendars",
+    label: "Calendars",
     href: "products/calendars.html",
     cardClass: "card-blue",
     iconKey: "calendar",
-    tagline: "Photo desk & wall calendars personalized year-round."
+    tagline: "Desk and printable calendars for Qatar, faith, gifts, and everyday planning."
   },
   {
     key: "decals",
@@ -52,11 +47,11 @@ var CATEGORIES = [
   },
   {
     key: "storybooks",
-    label: "Bible Storybooks",
+    label: "Catholic Storybooks",
     href: "products/storybooks.html",
     cardClass: "card-blush",
     iconKey: "book",
-    tagline: "Gentle illustrated Bible stories for little hearts, book by book."
+    tagline: "Gentle illustrated Catholic faith books for children and families."
   },
   {
     key: "planners",
